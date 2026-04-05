@@ -1,46 +1,32 @@
 
 # Deep Learning Image Recognition
 
-State-of-the-art image recognition system using convolutional neural networks (CNNs) and transfer learning.
+A high-performance image recognition system built with C++ and leveraging deep learning models.
 
 ## Features
-- Pre-trained model integration (e.g., ResNet, VGG)
-- Custom CNN architecture definition
-- Image preprocessing and augmentation
-- Real-time inference capabilities
+- Efficient image preprocessing and data augmentation
+- Integration with popular deep learning frameworks (e.g., TensorFlow, ONNX Runtime)
+- High-throughput inference for real-time applications
+- Modular design for easy extension
 
 ## Getting Started
 
 ### Prerequisites
-- C++17 compatible compiler
-- OpenCV library
-- TensorFlow C++ API or similar deep learning framework
+- C++17 compiler
+- CMake 3.10+
+- OpenCV 4.x
+- A deep learning framework library (e.g., ONNX Runtime)
 
 ### Installation
 ```bash
-git clone https://github.com/Sible1954/Deep-Learning-Image-Recognition.git
-cd Deep-Learning-Image-Recognition
 mkdir build && cd build
 cmake ..
 make
 ```
 
 ### Usage
-```cpp
-#include <iostream>
-#include <opencv2/opencv.hpp>
-// Include deep learning framework headers
-
-int main() {
-    cv::Mat image = cv::imread("test_image.jpg");
-    if (image.empty()) {
-        std::cerr << "Could not open or find the image" << std::endl;
-        return -1;
-    }
-    // Perform image recognition using loaded model
-    std::cout << "Image recognition complete." << std::endl;
-    return 0;
-}
+```bash
+./image_recognition_system
 ```
 
 ## Contributing
